@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7b7aebf-0d43-4570-a619-9dac50cfcaaa" name="Default Changelist" comment="" />
+    <list default="true" id="a7b7aebf-0d43-4570-a619-9dac50cfcaaa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/main.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +18,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Ybhwr8YdjBtZJ36YXj2YVp6ZxI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
@@ -50,7 +59,7 @@
       <updated>1583217443280</updated>
       <workItem from="1583217448060" duration="591000" />
       <workItem from="1583218067843" duration="35000" />
-      <workItem from="1583220278713" duration="748000" />
+      <workItem from="1583220278713" duration="1703000" />
     </task>
     <servers />
   </component>
@@ -58,6 +67,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1583222598010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583222598010" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1583222670538">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583222670538" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1583222670538">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583222670538" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1583222670538">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583222670538" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1583222670538">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583222670538" />
     <state x="140" y="109" key="SettingsEditor" timestamp="1583221185763">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

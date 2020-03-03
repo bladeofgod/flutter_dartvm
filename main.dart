@@ -36,7 +36,20 @@ void handleMessage(HttpRequest request){
 }
 
 
-handleGET(HttpRequest request){}
+handleGET(HttpRequest request){
+
+  request.headers.forEach((key,values){
+    for(String v in values){
+      print("header value : $v");
+    }
+  });
+
+  var id = request.uri.queryParameters["id"];
+  request.response
+    ..statusCode = HttpStatus.ok
+    ..write("查询ID是 $id")
+    ..close();
+}
 
 handlePOST(HttpRequest request){}
 
