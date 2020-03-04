@@ -1,13 +1,49 @@
 
 
 import 'dart:io';
-
+import 'package:path/path.dart';
 import 'package:http_server/http_server.dart';
 
 main(){
-  day3();
+
+  day4();
+
+  //day3();
   //day2();
 }
+
+
+void day4()async{
+  //绝对路径
+  var mainPath = Platform.script.toFilePath();
+  //dirname 可以获取上级目录名字
+  var webPath = dirname(dirname(Platform.script.toFilePath())) + "/web_app";
+
+  VirtualDirectory staticFiles = new VirtualDirectory(webPath);
+  //允许监听目录，按照目录去请求
+  staticFiles.allowDirectoryListing = true;
+  //目录处理  当请求根目录时 会返回该地址
+  staticFiles.directoryHandler = (dir,request){
+    var indexUri = new Uri.file(dir.path).resolve('index.html');
+    staticFiles.serveFile(new File(indexUri.toFilePath()), request);
+  };
+
+  var requestServer = await HttpServer.bind(InternetAddress.anyIPv6, 8080);
+
+  await for(HttpRequest request in requestServer){
+    staticFiles.serveRequest(request);
+  }
+
+}
+
+
+
+
+
+
+
+
+
 /*
 * demo day 3
 * */
