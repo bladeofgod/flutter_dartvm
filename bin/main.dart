@@ -2,17 +2,50 @@
 
 import 'dart:io';
 
-main()async{
-  var requestServer = await HttpServer.bind(InternetAddress.loopbackIPv4, 8080);
+import 'package:http_server/http_server.dart';
 
+main(){
+  day3();
+  //day2();
+}
+/*
+* demo day 3
+* */
+
+void day3()async{
+  VirtualDirectory staticFiles = new VirtualDirectory('.');
+  var requestServer = await HttpServer.bind(InternetAddress.anyIPv6, 8080);
+
+  print("监听端口 : ${requestServer.port}");
+
+
+  await for(HttpRequest request in requestServer){
+    if(request.uri.toString() == '/' || request.uri.toString() == "/index.html"){
+      staticFiles.serveFile(new File('../web_app/index.html'), request);
+    }else{
+      handleMessage(request);
+    }
+  }
+
+}
+
+
+/*
+* demo day 2
+*
+*
+* */
+
+
+void day2()async{
+  var requestServer = await HttpServer.bind(InternetAddress.loopbackIPv4, 8080);
   await for(HttpRequest request in requestServer){
 //    request.response
 //        ..write("hello world")
 //        ..close();
-  handleMessage(request);
+    handleMessage(request);
 
   }
-
 }
 
 void handleMessage(HttpRequest request){

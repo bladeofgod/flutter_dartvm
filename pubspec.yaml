@@ -1,0 +1,8 @@
+
+
+name: dartvm
+descript: practice demo
+
+
+dependencies:
+  http_server: ^0.9.8+3
